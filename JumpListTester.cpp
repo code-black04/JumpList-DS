@@ -834,63 +834,6 @@ void JumpListTester::testv() {
 	passOut_();
 }
 
-// reserved for new test cases
-void JumpListTester::testw() {
-	funcname_ = "JumpListTester::testw";
-	{
-
-	}
-	passOut_();
-}
-
-void JumpListTester::testx() {
-	funcname_ = "JumpListTester::testx";
-	{
-
-	}
-	passOut_();
-}
-
-void JumpListTester::testy() {
-	funcname_ = "JumpListTester::testy";
-	{
-
-	}
-	passOut_();
-}
-
-// This is not part of the (assessed) test cases.
-// It just shows how things go wrong if you don't implement copy ctor / copy asg
-// (which you are not asked to do in this assignment).
-void JumpListTester::testz() {
-	funcname_ = "JumpListTester::testz";
-	{
-
-	string s, ans;
-
-	JumpList a(3);
-	JumpList b(10);
-	b = a;
-	s = b.print();
-	ans = "a b blah\na\n3";
-	if (s != ans)
-		errorOut_("wrong copy", ans, s, 1);
-
-	a.insert("cat");
-	s = b.print();
-	if (s != ans)
-		errorOut_("sticky copy, old affected new", ans, s, 2);
-
-	a.erase("cat");
-	b.insert("dog");
-	s = a.print();
-	if (s != ans)
-		errorOut_("sticky copy, new affected old", ans, s, 2);
-
-	}
-	passOut_();
-}
-
 void JumpListTester::errorOut_(const string& errMsg, unsigned int errBit) {
 
 	cerr << funcname_ << ":" << " fail" << errBit << ": ";

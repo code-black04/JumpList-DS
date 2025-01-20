@@ -41,12 +41,6 @@ public:
 	void testu();
 	void testv();
 
-	// unused
-	void testw();
-	void testx();
-	void testy();
-	void testz();
-
 private:
 
 	// four overloaded versions

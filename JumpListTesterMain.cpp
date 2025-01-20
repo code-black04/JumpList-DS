@@ -30,10 +30,6 @@ int main(int argc, char* argv[]) {
 		case 't': { JumpListTester t; t.testt(); } break;
 		case 'u': { JumpListTester t; t.testu(); } break;
 		case 'v': { JumpListTester t; t.testv(); } break;
-//		case 'w': { JumpListTester t; t.testw(); } break;
-//		case 'x': { JumpListTester t; t.testx(); } break;
-//		case 'y': { JumpListTester t; t.testy(); } break;
-		case 'z': { JumpListTester t; t.testz(); } break;
 		default: { cout << "Options are a -- v." << endl; } break;
 	       	}
 	}
